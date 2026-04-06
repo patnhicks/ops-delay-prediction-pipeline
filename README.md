@@ -45,22 +45,22 @@ Analytical Database → Predictive Models → Executive Dashboard
 
 ## Project Structure
 
-ops-delay-prediction-pipeline/
-├── data/
-│ ├── raw/ # Downloaded DOT zip files
-│ └── processed/ # Cleaned parquet files
-├── ingestion/
-│ └── dot_pipeline.py # Automated DOT data downloader
-├── etl/
-│ └── transform.py # Extract, transform, load pipeline
-├── notebooks/
-│ └── 01_eda.ipynb # Exploratory data analysis
-├── models/ # Delay prediction models
-├── dashboard/ # Executive dashboard
-├── src/ # Reusable utility functions
-├── reports/ # Generated visualizations
-├── requirements.txt
-└── README.md
+    ops-delay-prediction-pipeline/
+    ├── data/
+    │   ├── raw/          # Downloaded DOT zip files
+    │   └── processed/    # Cleaned parquet files
+    ├── ingestion/
+    │   └── dot_pipeline.py    # Automated DOT data downloader
+    ├── etl/
+    │   └── transform.py       # Extract, transform, load pipeline
+    ├── notebooks/
+    │   └── 01_eda.ipynb       # Exploratory data analysis
+    ├── models/                # Delay prediction models
+    ├── dashboard/             # Executive dashboard
+    ├── src/                   # Reusable utility functions
+    ├── reports/               # Generated visualizations
+    ├── requirements.txt
+    └── README.md
 
 ## Key Findings (EDA)
 
@@ -141,6 +141,7 @@ source venv/bin/activate  # Mac/Linux
 # Install dependencies
 pip install -r requirements.txt
 ```
+
 ### Run the Pipeline
 
 ```bash
